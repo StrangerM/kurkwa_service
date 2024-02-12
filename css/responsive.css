@@ -134,7 +134,9 @@
 .typography-page-wrapper .tab-style {
 	margin-bottom: 30px;
 }
-
+.hero-slide .carousel-caption h1{
+	font-size: 35px;
+}
 
 }
 
@@ -170,6 +172,17 @@
 	display: block;
 }
 
+.hero-slide .carousel-caption .phone {
+	font-size: 20px;
+}
+
+.hero-slide .carousel-caption small {
+	font-size: 10px;
+}
+
+.hero-slide .carousel-caption h1{
+	font-size: 30px;
+}
 
 }
 
