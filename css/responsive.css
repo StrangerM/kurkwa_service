@@ -265,6 +265,18 @@
 	margin-bottom: 30px;
 }
 
+.hero-slide .carousel-caption .phone {
+	font-size: 20px;
+}
+
+.hero-slide .carousel-caption small {
+	font-size: 15px;
+}
+
+.hero-slide .carousel-caption h1{
+	font-size: 30px;
+}
+
 }
 
 
@@ -313,5 +325,19 @@
 @media (min-width : 1200px) and (max-width : 1280px) {
 
 
+}
+
+@media (max-width : 450px) {
+	.hero-slide .carousel-caption .phone {
+		font-size: 0px;
+	}
+	
+	.hero-slide .carousel-caption small {
+		font-size: 0px;
+	}
+	
+	.hero-slide .carousel-caption h1{
+		font-size: 20px;
+	}
 }
 
