@@ -2549,3 +2549,10 @@ li.dropdown.menu-animating > .submenu-sub-wrapper {
     text-align: center;
     top: 65%;
 }
+
+.lang{
+    position: fixed;
+    top:5%;
+    left: 90%;
+    z-index: 9999
+}
