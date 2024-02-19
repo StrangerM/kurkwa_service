@@ -517,6 +517,7 @@ SERVICE WRAPPER
 .service-wrapper .media-heading {
     margin-bottom: 15px;
     font-weight: 400;
+    color: #fff;
 }
 .service-wrapper .media-heading a{
     color: #fff;
@@ -2552,7 +2553,67 @@ li.dropdown.menu-animating > .submenu-sub-wrapper {
 
 .lang{
     position: fixed;
-    top:5%;
-    left: 90%;
+    top: 2%;
+    right: 1.5%;
     z-index: 9999
 }
+
+input, select, textarea {
+	display: inline-block;
+	outline: none;
+	border: .0625rem solid #686868;
+	border-radius: .1875rem;
+	color: #3b3b3b;
+	background-color: #fff;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 130%;
+	transition: all .15s ease-in-out;
+	will-change: auto;
+}
+
+
+.lang-switcher {
+	width: -moz-fit-content;
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	border-radius: 6px;
+	transition: background-color .15s ease-in-out;
+	will-change: background-color;
+    background: #f3f3f3;
+    border: 1px solid #555;
+    padding: 1px 3px;
+}
+
+.lang-switcher img {
+	display: block;
+	padding-left: .3125rem;
+}
+
+.lang-switcher__select {
+	border: none !important;
+}
+
+.lang-switcher__select {
+	height: 2.5rem;
+	width: 3.125rem;
+	padding: 0rem .3125rem 0rem .625rem;
+	background: rgba(0,0,0,0);
+	border-radius: .1875rem;
+	color: #555;
+	font-size: 1.6rem;
+    font-weight: 600;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	cursor: pointer;
+}
+
+.lang-switcher__select option {
+	color: #3b3b3b;
+    font-weight: 600;
+    background: #f3f3f3;
+}
+
+

@@ -30,6 +30,7 @@
     <link href="css/responsive.css" rel="stylesheet">
 
     <script src="js/vendor/modernizr-2.8.1.min.js"></script>
+		<script src="js/localization.js" defer></script>
     <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -41,6 +42,14 @@
 
 
 	<body>
+		<div class="lang lang-switcher">
+			<img id="lang-img" alt="flag" src="img/lang/cs.png">
+			<select class="lang-switcher__select" onchange="setLanguage(this.value)">
+							<option value="cs" selected="">CS</option>
+							<option value="en">EN</option>
+			</select>
+	</div>		
+				
 	  <div id="st-container" class="st-container">
 	    <div class="st-pusher">
 	      <div class="st-content">
@@ -56,8 +65,7 @@
 						</div>
 					</nav>
 				</header>-->
-
-
+			
                 <div id="x-corp-carousel" class="carousel slide hero-slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
@@ -66,9 +74,8 @@
                     </ol>
 
                     <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-									<button class="lang">CZ</button>
+                    <div class="carousel-inner" role="listbox">									
+                        <div class="item active">								
                             <img src="img/slider-bg1.jpeg" alt="Hero Slide">
                             <!--Slide Image-->
 
@@ -94,17 +101,17 @@
 						<section class="intro-wrapper"> 
 							<div class="row"> 
 								<div class="col-lg-6 col-md-8">
-									<h2 class="wow fadeInDown">Welcome to Personal agency.</h2>
-									<p class="wow fadeInDown">We work in all countries of the European Union, both long-term and short-term.
+									<h2 id="welcome" class="wow fadeInDown">Welcome to Personal agency.</h2>
+									<p id="description" class="wow fadeInDown">We work in all countries of the European Union, both long-term and short-term.
 										We will look forward to cooperation.
 									</p>
 
-									<h3 class="wow fadeInDown">Contact info:</h3>
-									<p class="wow fadeInDown">Director: Ivan Sliusar. Mob tel: +420775169679
-										<br>Personnel Manager: Sumkin Ondrá. Mob tel:  +420775074436 
-										<br>email: <a href="shumkinandreis@gmail.com">shumkinandreis@gmail.com</a>.<br>
+									<h3 id="contact-title" class="wow fadeInDown">Contact info:</h3>
+									<p class="wow fadeInDown">
+										<span id="contact-director">Director: Ivan Sliusar. Mob tel: +420775169679</span><br>
+										<span id="contact-manager">Personnel Manager: Sumkin Ondrá. Mob tel:  +420775074436</span><br>
+										<span>email: <a href="shumkinandreis@gmail.com">shumkinandreis@gmail.com</a>.</span><br>
 									</p>
-									
 
 								</div>
 
@@ -114,7 +121,7 @@
 
 
 						<section class="service-wrapper">
-							<h2 class="section-title wow fadeInDown">Our Services</h2>
+							<h2 id="services-title" class="section-title wow fadeInDown">Our Services</h2>
 				            <div class="row">
 				              <div class="col-md-6 wow fadeInRight">
 				                <div class="media">
@@ -122,8 +129,8 @@
 				                    <span class="icon bg1 flaticon-increasing5"></span>
 				                  </a>
 				                  <div class="media-body">
-				                    <h3 class="media-heading"><a href="#">Quality Services</a></h3>
-				                    <p>We provide sorting, quality control, packing, rework, visual inspection, assembling, and disassembling of the product.</p>
+				                    <h3 id="service-1-title" class="media-heading"><a href="#">Quality Services</a></h3>
+				                    <p id="service-1-description">We provide sorting, quality control, packing, rework, visual inspection, assembling, and disassembling of the product.</p>
 				                  </div> <!-- /.media-body -->
 				                </div> <!-- /.media -->
 				              </div> <!-- /.col-md-6 -->
@@ -134,8 +141,8 @@
 				                    <span class="icon bg2 flaticon-syncing"></span>
 				                  </a>
 				                  <div class="media-body">
-				                    <h3 class="media-heading"><a href="#">Operators for production</a></h3>
-				                    <p>We provide super-qualified operators for all types of production and warehouse.</p>
+				                    <h3 id="service-2-title" class="media-heading"><a href="#">Operators for production</a></h3>
+				                    <p id="service-2-description">We provide super-qualified operators for all types of production and warehouse.</p>
 				                  </div> <!-- /.media-body -->
 				                </div> <!-- /.media -->
 				              </div> <!-- /.col-md-6 -->
@@ -146,8 +153,8 @@
 				                    <span class="icon bg3 flaticon-file24"></span>
 				                  </a>
 				                  <div class="media-body">
-				                    <h3 class="media-heading"><a href="#">CO2 Welding &amp; Advice</a></h3>
-				                    <p>Our workers have big experience in CO2 welding.</p>
+				                    <h3 id="service-3-title" class="media-heading"><a href="#">CO2 Welding &amp; Advice</a></h3>
+				                    <p id="service-3-description">Our workers have big experience in CO2 welding.</p>
 				                  </div> <!-- /.media-body -->
 				                </div> <!-- /.media -->
 				              </div> <!-- /.col-md-6 -->
@@ -158,8 +165,8 @@
 				                    <span class="icon bg4 flaticon-royalty"></span>
 				                  </a>
 				                  <div class="media-body">
-				                    <h3 class="media-heading"><a href="#">SMD component soldering</a></h3>
-				                    <p>We provide all soldering like SMD components, BGA, and through-hole component sets.</p>
+				                    <h3 id="service-4-title" class="media-heading"><a href="#">SMD component soldering</a></h3>
+				                    <p id="service-4-description">We provide all soldering like SMD components, BGA, and through-hole component sets.</p>
 				                  </div> <!-- /.media-body -->
 				                </div> <!-- /.media -->
 				              </div> <!-- /.col-md-6 -->
