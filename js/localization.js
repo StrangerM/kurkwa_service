@@ -5,8 +5,12 @@ const languages = {
     welcome: "Welcome to Personal agency",
     description: "We work in all countries of the European Union, both long-term and short-term. \nWe will look forward to cooperation.",
     contactTitle: "Contact info:",
-    contactDirector: "Director:  Ivan Sliusar. Mob tel:  +420775169679",
-    contactManager: "Personnel Manager:  Sumkin Ondrá. Mob tel:  +420775074436",
+    contactDirectorTitle: "Organization manager:",
+    contactDirectorName: "Shumkin Ondra",
+    contactDirectorTel: "+420775074436",
+    contactAssistantTitle: "Technical assistant:",
+    contactAssistantName: "Darina Tovstoles",
+    contactAssistantTel: "+380678339527",
     servicesTitle: "Our Services",
     service1Title: "Quality Services",
     service1Description: "We provide sorting, quality control, packing, rework, visual inspection, assembling, and disassembling of the product.",
@@ -22,8 +26,12 @@ const languages = {
     welcome: "Vítejte v Personal agency",
     description: "Pracujeme na všech zemí Evropské unie jak dlouhodobě ták aj krátkodobé. \nBudeme se těšit na spolupráci.",
     contactTitle: "Kontaktní informace:",
-    contactDirector: `Řiditel Agentury:  Ivan Sliusar.Mob tel: +420775169679`,
-    contactManager: 'Personální Manažer:  Sumkin Ondrá. Mob tel:  +420775074436',
+    contactDirectorTitle: "Manažer organizace:",
+    contactDirectorName: "Šumkin Ondrá",
+    // contactDirectorTel: "+420775074436",
+    contactAssistantTitle: "Technický asistent:",
+    contactAssistantName: "Darina Tovstoles",
+    // contactAssistantTel: "+380678339527",
     servicesTitle: "Poskytujeme",
     service1Title: "Kvalitní služby",
     service1Description: "Provádíme třídění, kontrolu kvality, balení, přepracování, vizuální kontrolu, montáž a demontáž produktu.",
@@ -40,9 +48,12 @@ function setLanguage(lang) {
   const language = languages[lang];
   document.getElementById('welcome').innerText = language.welcome;
   document.getElementById('description').innerText = language.description;
-  document.getElementById('contact-title').innerText = language.contactTitle;
-  document.getElementById('contact-director').innerText = language.contactDirector;
-  document.getElementById('contact-manager').innerText = language.contactManager;
+  document.getElementById('contact-director-title').innerText = language.contactDirectorTitle;
+  document.getElementById('contact-director-name').innerText = language.contactDirectorName;
+  // document.getElementById('contact-director-tel').innerText = language.contactDirectorTel;
+  document.getElementById('contact-assistant-title').innerText = language.contactAssistantTitle;
+  document.getElementById('contact-assistant-name').innerText = language.contactAssistantName;
+  // document.getElementById('contact-assistant-tel').innerText = language.contactAssistantTel;
   document.getElementById('services-title').innerText = language.servicesTitle;
   document.getElementById('service-1-title').innerText = language.service1Title;
   document.getElementById('service-1-description').innerText = language.service1Description;
