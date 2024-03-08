@@ -2616,4 +2616,9 @@ input, select, textarea {
     background: #f3f3f3;
 }
 
+#contact-director-name, #contact-assistant-name {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
 
