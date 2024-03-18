@@ -23,14 +23,14 @@ const languages = {
   },
   
   cs: {
-    welcome: "Vítejte v Personal agency",
+    welcome: "Vítejte v Autorizační služba",
     description: "Pracujeme na všech zemí Evropské unie jak dlouhodobě ták aj krátkodobé. \nBudeme se těšit na spolupráci.",
     contactTitle: "Kontaktní informace:",
     contactDirectorTitle: "Manažer organizace:",
     contactDirectorName: "Šumkin Ondrá",
     // contactDirectorTel: "+420775074436",
     contactAssistantTitle: "Technický asistent:",
-    contactAssistantName: "Darina Tovstoles",
+    contactAssistantName: "Darina Vasilenko",
     // contactAssistantTel: "+380678339527",
     servicesTitle: "Poskytujeme",
     service1Title: "Kvalitní služby",
