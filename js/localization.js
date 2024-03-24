@@ -2,7 +2,7 @@
 
 const languages = {
   en: {
-    welcome: "Welcome to Personal agency",
+    welcome: "Welcome to Authorizing service",
     description: "We work in all countries of the European Union, both long-term and short-term. \nWe will look forward to cooperation.",
     contactTitle: "Contact info:",
     contactDirectorTitle: "Organization manager:",
