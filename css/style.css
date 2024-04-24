@@ -571,6 +571,9 @@ SERVICE WRAPPER
 .service-wrapper .icon.bg4 {
     background: #9897c1;
 }
+.service-wrapper .icon.bg5 {
+    background: #57a3cf;
+}
 .service-wrapper .icon:hover {
     background: #fff;
 }

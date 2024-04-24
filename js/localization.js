@@ -9,7 +9,7 @@ const languages = {
     contactDirectorName: "Shumkin Ondra",
     contactDirectorTel: "+420775074436",
     contactAssistantTitle: "Technical assistant:",
-    contactAssistantName: "Darina Tovstoles",
+    contactAssistantName: "Darina Vasilenko",
     contactAssistantTel: "+380678339527",
     servicesTitle: "Our Services",
     service1Title: "Quality Services",
@@ -19,7 +19,8 @@ const languages = {
     service3Title: "CO2 Welding & Advice",
     service3Description: "Our workers have big experience in CO2 welding.",
     service4Title: "SMD component soldering",
-    service4Description: "We provide all soldering like SMD components, BGA, and through-hole component sets."
+    service4Description: "We provide all soldering like SMD components, BGA, and through-hole component sets.",
+    service5Title: "Preparation and finishing construction",
   },
   
   cs: {
@@ -40,7 +41,8 @@ const languages = {
     service3Title: "Svářeč C02",
     service3Description: "Naši pracovníci mají bohaté zkušenosti se svařováním CO2.",
     service4Title: "Pájení SMD součástek",
-    service4Description: "Poskytujeme veškeré pájení jako SMD součástky, BGA a sady součástek s průchozími otvory."
+    service4Description: "Poskytujeme veškeré pájení jako SMD součástky, BGA a sady součástek s průchozími otvory.",
+    service5Title: "Přípravné a dokončovací stavební práce.",
   }
 };
 
@@ -63,6 +65,7 @@ function setLanguage(lang) {
   document.getElementById('service-3-description').innerText = language.service3Description;
   document.getElementById('service-4-title').innerText = language.service4Title;
   document.getElementById('service-4-description').innerText = language.service4Description;
+  document.getElementById('service-5-title').innerText = language.service5Title;
 
   document.getElementById('lang-img').src = 'img/lang/' + lang + '.png';
 };
